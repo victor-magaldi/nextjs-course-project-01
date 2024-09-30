@@ -1,18 +1,11 @@
-import Image from "next/image";
+import { Hero } from "@/components/hero";
 
-export default function Performance() {
+export default function PerformancePage() {
   return (
-    <div>
-      Performance
-      <div style={{ height: "400px", position: "relative" }}>
-        <Image
-          src="/performance.jpg"
-          alt="car factory"
-          fill
-          sizes="100vw"
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-    </div>
+    <Hero
+      imgData="/performance.jpg"
+      imgAlt="Welding"
+      title="We serve high performance applications"
+    />
   );
 }

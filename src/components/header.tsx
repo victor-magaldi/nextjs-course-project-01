@@ -5,6 +5,9 @@ export function Header() {
     <header>
       <ul>
         <li>
+          <Link href={"/"}>Home</Link>
+        </li>
+        <li>
           <Link href={"/performance"}>Performance</Link>
         </li>
         <li>

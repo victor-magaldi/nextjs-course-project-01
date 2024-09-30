@@ -1,18 +1,11 @@
-import Image from "next/image";
+import { Hero } from "@/components/hero";
 
-export default function Scale() {
+export default function ScalePage() {
   return (
-    <div>
-      Scale
-      <div style={{ height: "400px", position: "relative" }}>
-        <Image
-          src="/scale.jpg"
-          alt="car factory"
-          fill
-          sizes="100vw"
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-    </div>
+    <Hero
+      imgData="/scale.jpg"
+      imgAlt="steel factory"
+      title="Scale your app to infinity"
+    />
   );
 }

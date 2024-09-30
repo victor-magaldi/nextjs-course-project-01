@@ -1,18 +1,11 @@
-import Image from "next/image";
+import { Hero } from "@/components/hero";
 
-export default function Reliability() {
+export default function ReliabilityPage() {
   return (
-    <div>
-      Reliability
-      <div style={{ height: "400px", position: "relative" }}>
-        <Image
-          src="/reliability.jpg"
-          alt="car factory"
-          fill
-          sizes="100vw"
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-    </div>
+    <Hero
+      imgData="/reliability.jpg"
+      imgAlt="welding"
+      title="Super high reliability hosting"
+    />
   );
 }
